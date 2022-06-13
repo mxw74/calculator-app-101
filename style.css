@@ -1,5 +1,55 @@
+.container {
+  grid-template-columns: 1fr ;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "firstnumber"
+  "secondnumber"
+  "results"
+  "button"
+  "submissionButtons";
+  text-align: center;
+  background-color: lightpink;
+  width: 100%;
+}
+
 body {
   margin: 20% auto;
   width: 50%;
   height: 75%;
+  background-color: lightpink;
+}
+
+.firstnumber {
+  padding: 20px;
+}
+
+.secondnumber {
+  padding: 20px;
+}
+
+.results{
+  border: solid black 3px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.button {
+  background-color: black;
+  align-items: center;
+  padding: 20px;
+}
+
+button {
+  padding: 5px;
+  font-weight: bold;
+}
+
+button:hover {
+  background: rgba(10, 10, 10, 0.094);
+  color: white;
+  font-weight: bold;
+}
+
+input {
+  padding: 5px;
 }
